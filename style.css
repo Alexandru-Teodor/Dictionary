@@ -1,0 +1,45 @@
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+body {
+    background-color: silver;
+    font-size: xx-large;
+    font-family: papyrus;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 6vw;
+    }
+}
+#main-box {
+    background-color: white;
+    width:fit-content;
+    max-width: 80%;
+    max-height: 80%;
+    padding: 1rem;
+    border-radius: 5px;
+    position:absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    box-shadow: 0 0 10px 2px;
+}
+#add-box {
+    box-shadow: 0 0 3px 1px;
+    max-width: 80%;
+    max-height: 80%;
+}
+#search-box {
+    box-shadow: 0 0 3px 1px;
+    max-width: 80%;
+    max-height: 80%;
+}
+button:hover {
+    cursor: pointer;
+}
+#result {
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>N Buttons</title>
+    <meta name = "viewport" content = "height = device-height, width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <div id = "main-box">
+        <form>
+            <label for = "add-btn">Introduce a word in the dictionary:<br></label>
+            <input type = "text" id = "add-box">
+            <button type="submit" id ="add-btn" onclick="return addWord()">Add word</button>
+        </form>
+        <form>
+            <label for = "search-btn">Search for a word in the dictionary:<br></label>
+            <input type = "text" id = "search-box" name = "search" value = "">
+            <button type = "submit" id = "search-btn" onclick= "return searchWord()"> Search word </button>
+        <p id = "result"></p>
+        </form>
+    </div>
+    
+    <script src = "script.js"> </script>
+</body>
+</html>
